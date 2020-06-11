@@ -4,6 +4,17 @@
       "clearColor": "0x00000000",
       "useImageWorker": true
     },
+    "keys": {
+      "8": "Back",
+      "13": "Enter",
+      "27": "Menu",
+      "37": "Left",
+      "38": "Up",
+      "39": "Right",
+      "40": "Down",
+      "27": "Escape",
+      "32": "Space"
+    },
     "debug": false,
     "imageQuality": 90,
     "previewInterval": 3000,

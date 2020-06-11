@@ -146,9 +146,11 @@ export default class Item extends Lightning.Component {
                 Image: {
                     smooth: {scale: 1.2}
                 },
+                /*
                 Rating: {
                     smooth: {y: 360}
                 }
+                */
             }
         });
 

@@ -7,7 +7,7 @@ export default class List extends Lightning.Component {
             Items: {
                 y: 102, forceZIndexContext: true, boundsMargin: [500, 100, 500, 100],
                 transitions: {
-                    x: {duration: .3, timingFunction: 'cubic-bezier(0.20, 1.00, 0.80, 1.00)'}
+                    x: {duration: .3, timingFunction: 'cubic-bezier(0.80, 1.0, 0.80, 0.20)'}
                 }
             },
             Focus: {
