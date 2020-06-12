@@ -71,11 +71,13 @@ export default class Player extends Lightning.Component {
     }
 
     _active() {
-      this._spinnerAnimation.start()
+      this._spinnerAnimation.start();
+      this.application.emit("hideBackground");
     }
 
     _inactive() {
-      this._spinnerAnimation.stop()
+      this._spinnerAnimation.stop();
+      this.application.emit("showBackground");
     }
 
     _firstActive() {

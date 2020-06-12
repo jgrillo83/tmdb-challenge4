@@ -18,7 +18,7 @@ export default class Background extends Lightning.Component{
     _init() {
         let bg;
 
-        this.application.on("updateItem", ({item})=> {
+        this.application.on("updateItem", ({item}) => {
             if(item.background === bg){
                 return;
             }
@@ -33,6 +33,18 @@ export default class Background extends Lightning.Component{
                 smooth: {scale: 1, alpha: 1}
             });
 
+        });
+
+        this.application.on("hideBackground", () => {
+          this.tag("Background").patch({
+            visible: false,
+          });
+        });
+
+        this.application.on("showBackground", () => {
+          this.tag("Background").patch({
+              visible: true,
+          });
         });
     }
 }
